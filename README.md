@@ -1,11 +1,11 @@
 # SpringPetApp
 Для отправки запросов в формате JSON использовал Postman
-#cURL:
-#getAll
+# cURL:
+getAll
 ```
 curl --location 'http://localhost:8989/getAll'
 ```
-#getPet
+getPet
 ```
 curl --location --request PUT 'http://localhost:8989/editPet' \
 --header 'Content-Type: application/json' \
@@ -27,7 +27,7 @@ curl --location --request PUT 'http://localhost:8989/editPet' \
     }
 }'
 ```
-#editPet
+editPet
 ```
 curl --location --request DELETE 'http://localhost:8989/deletePet' \
 --header 'Content-Type: application/json' \
@@ -35,7 +35,7 @@ curl --location --request DELETE 'http://localhost:8989/deletePet' \
     "id": 2
 }'
 ```
-#createPet
+createPet
 ```
 curl --location 'http://localhost:8989/createPet' \
 --header 'Content-Type: application/json' \
@@ -45,7 +45,7 @@ curl --location 'http://localhost:8989/createPet' \
     "age": 2
 }'
 ```
-#deletePet
+deletePet
 ```
 curl --location --request GET 'http://localhost:8989/getPet' \
 --header 'Content-Type: application/json' \
