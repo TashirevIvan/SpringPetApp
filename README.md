@@ -5,7 +5,7 @@ getAll
 ```
 curl --location 'http://localhost:8989/getAll'
 ```
-getPet
+eidtPet
 ```
 curl --location --request PUT 'http://localhost:8989/editPet' \
 --header 'Content-Type: application/json' \
@@ -27,7 +27,7 @@ curl --location --request PUT 'http://localhost:8989/editPet' \
     }
 }'
 ```
-editPet
+deletePet
 ```
 curl --location --request DELETE 'http://localhost:8989/deletePet' \
 --header 'Content-Type: application/json' \
@@ -45,7 +45,7 @@ curl --location 'http://localhost:8989/createPet' \
     "age": 2
 }'
 ```
-deletePet
+getPet
 ```
 curl --location --request GET 'http://localhost:8989/getPet' \
 --header 'Content-Type: application/json' \
